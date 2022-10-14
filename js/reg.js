@@ -83,7 +83,7 @@
       resulr = await resp.json();
       if (resulr.msg === "") {
         active = true;
-        open("./login.html", "_self");
+        open("./index.html", "_self");
 
         console.log(" no Error");
       } else {
