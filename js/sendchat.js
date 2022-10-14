@@ -8,6 +8,7 @@
   const containerBox = document.querySelector(".container"); //发送按钮
   const asideName = document.querySelector(".aside-name");
   const asideAcount = document.querySelector(".aside-account");
+
   //   console.log(Date());
   //   (async () => {
   //     const resp = await API.post("/api/user/login", loginUser);
@@ -17,7 +18,7 @@
   const closeBtn = document.querySelector(".icon-close"); //关闭按钮
   closeBtn.addEventListener("click", () => {
     API.loginOut();
-    window.open("./login.html", "_blank");
+    window.open("./index.html", "_blank");
   });
   //获取用户信息，将获取到的用户信息加到指定位置
   async function getUser() {
