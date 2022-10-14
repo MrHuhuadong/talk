@@ -35,7 +35,7 @@
           loginIdE.nextElementSibling.innerText = result.msg;
           loginPwdE.nextElementSibling.innerText = result.msg;
         } else {
-          window.open("./login.html");
+          window.open("./login.html", "_self");
           // console.log(loginUser);
         }
       })();
