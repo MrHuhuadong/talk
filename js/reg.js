@@ -4,7 +4,7 @@
   const loginPwdE = document.querySelector("#txtLoginPwd"); //密码
   const regBtnE = document.querySelector(".submit"); //注册
   const loginPwd1E = document.querySelector("#txtLoginPwdConfirm");
-  console.log(loginIdE.innerText);
+  // console.log(loginIdE.innerText);
 
   //防抖函数
   function debounce(fn, ms) {
