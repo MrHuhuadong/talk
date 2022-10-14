@@ -33,11 +33,11 @@
   async function getHistoryMessage() {
     const resp = await API.get("/api/chat/history");
     const historyMessage = await resp.json();
-    console.log(historyMessage.data);
+    // console.log(historyMessage.data);
     for (let i = 0; i < historyMessage.data.length; i++) {
       //判断from是否有值，有的话则是用户的消息，反之
       if (historyMessage.data[i].from) {
-        console.log(historyMessage.data[i].createdAt);
+        // console.log(historyMessage.data[i].createdAt);
         let contentMesages = document.createElement("div"); // 创建一个消息框
         contentMesages.classList.add("chat-item", "me"); //给消息框添加类，方便应用CSS样式
         contentMesages.innerHTML = `<img class="chat-avatar" src="./asset/avatar.png" />

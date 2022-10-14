@@ -30,16 +30,16 @@
         if (token) {
           localStorage.setItem("token", token);
         }
-        console.log(resp.headers.get("authorization"));
+        // console.log(resp.headers.get("authorization"));
         if (result.msg) {
           loginIdE.nextElementSibling.innerText = result.msg;
           loginPwdE.nextElementSibling.innerText = result.msg;
         } else {
-          window.open("./login.html", "_blank");
-          console.log(loginUser);
+          window.open("./login.html");
+          // console.log(loginUser);
         }
       })();
     }
   });
-  console.log(loginIdE);
+  // console.log(loginIdE);
 })();

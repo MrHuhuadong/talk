@@ -31,7 +31,7 @@
     } else {
       loginIdE.nextElementSibling.innerText = "";
     }
-    console.log(result);
+    // console.log(result);
   }
   loginIdE.addEventListener("input", debounce(prin, 700));
 
@@ -88,14 +88,14 @@
         console.log(" no Error");
       } else {
         active = false;
-        console.log(resulr.msg);
+        // console.log(resulr.msg);
       }
     }
 
     var msgs = te();
     if (active) {
       // open("./login.html");
-      console.log(" open");
+      // console.log(" open");
     }
     //   console.log(msgs);
     //   if (te().msg === "") {
